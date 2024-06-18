@@ -1,14 +1,46 @@
+:root {
+  --branding-color: black;
+  --heading-font-family: "Roboto", sans-serif;
+  --secondary-color: #202020;
+}
 body {
-  background-color: aliceblue;
+  font-family: var(--heading-font-family);
 }
 
-h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-style: normal;
-}
-p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-style: normal;
+  color: white;
+}
+h1 {
+  font-size: 96px;
+}
+p {
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+}
+.hero {
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 160px 20px;
+}
+.hero p {
+  font-size: 36px;
+  font-size: bold;
+  margin: 0;
+}
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 12px 20px;
 }
