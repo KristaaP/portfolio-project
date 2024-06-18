@@ -5,6 +5,7 @@
 }
 body {
   font-family: var(--heading-font-family);
+  background-color: black;
 }
 
 h1,
@@ -20,11 +21,16 @@ h6 {
 }
 h1 {
   font-size: 96px;
+  line-height: 1.5;
+}
+h2 {
+  font-size: 64px;
 }
 p {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   color: white;
+  font-size: 16px;
+  line-height: 30px;
 }
 .hero {
   background: var(--secondary-color);
@@ -47,4 +53,36 @@ p {
 .btn-branding:hover {
   color: #202020;
   background-color: white;
+}
+.btn-branding-outline {
+  background-color: #202020;
+  color: white;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+.btn-branding-outline:hover {
+  color: #202020;
+  background-color: white;
+}
+.project-description {
+  padding: 120px 60px;
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 44px;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
